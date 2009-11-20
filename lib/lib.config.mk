@@ -6,7 +6,7 @@ LIB_OBJ_SUFFIX ?= .o
 
 LIB_SRC_DEP_SUFFIX ?= .d
 
-LIB_EXT_DEPS ?= boost_signals-gcc42-mt
+LIB_EXT_DEPS ?= boost_signals-gcc42-mt boost_date_time-gcc42-mt
 
 #LIB_EXT_DEP_PATHS ?= /usr/local/lib
 

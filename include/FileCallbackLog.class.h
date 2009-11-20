@@ -25,7 +25,7 @@ namespace CALLBACK_LOG
    {
    public:
 
-      FileCallbackLog(const std::string&, LOG_LVL);
+      FileCallbackLog(const std::string&, const std::string&, LOG_LVL);
 
    protected:
 

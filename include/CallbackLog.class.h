@@ -27,7 +27,7 @@ namespace CALLBACK_LOG
    {
    public:
 
-      CallbackLog(LOG_LVL);
+      CallbackLog(const std::string&, LOG_LVL);
 
       static unsigned long msg_ctr;
 
@@ -40,6 +40,10 @@ namespace CALLBACK_LOG
       virtual void write_message(const std::string&) = 0;
 
       const std::string loglvl_str(LOG_LVL);
+
+      const std::string label;
+
+      const std::string timestamp() const;
 
       LOG_LVL loglvl;
    };

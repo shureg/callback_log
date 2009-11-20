@@ -443,7 +443,190 @@ CallbackLog.class.o: CallbackLog.class.cc \
   /usr/local/include/boost-1_39/boost/bind/bind_cc.hpp \
   /usr/local/include/boost-1_39/boost/bind/bind_mf_cc.hpp \
   /usr/local/include/boost-1_39/boost/bind/bind_mf2_cc.hpp \
-  /usr/local/include/boost-1_39/boost/bind/placeholders.hpp
+  /usr/local/include/boost-1_39/boost/bind/placeholders.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/locale_config.hpp \
+  /usr/local/include/boost-1_39/boost/cstdint.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/ptime.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_system.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_config.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_resolution_traits.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/year_month_day.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/period.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_calendar.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_weekday.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/constrained_value.hpp \
+  /usr/local/include/boost-1_39/boost/type_traits/is_base_of.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_day_of_year.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian_calendar.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian_calendar.ipp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_ymd.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/year_month_day.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_day.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_year.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_month.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_duration_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_date.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_calendar.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/adjust_functors.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/wrapping_int.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_generators.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_clock_device.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/c_time.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/wrapping_int.hpp \
+  /usr/local/include/boost-1_39/boost/config/no_tr1/cmath.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_system_split.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_system_counted.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/date_duration_operators.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/time_formatters.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/conversion.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/c_time.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_io.hpp \
+  /usr/local/include/boost-1_39/boost/io/ios_state.hpp \
+  /usr/local/include/boost-1_39/boost/io_fwd.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_facet.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/replace.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/config.hpp \
+  /usr/local/include/boost-1_39/boost/range/iterator_range.hpp \
+  /usr/local/include/boost-1_39/boost/range/functions.hpp \
+  /usr/local/include/boost-1_39/boost/range/begin.hpp \
+  /usr/local/include/boost-1_39/boost/range/config.hpp \
+  /usr/local/include/boost-1_39/boost/range/iterator.hpp \
+  /usr/local/include/boost-1_39/boost/range/mutable_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/range/const_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/range/end.hpp \
+  /usr/local/include/boost-1_39/boost/range/detail/implementation_help.hpp \
+  /usr/local/include/boost-1_39/boost/range/detail/common.hpp \
+  /usr/local/include/boost-1_39/boost/range/detail/sfinae.hpp \
+  /usr/local/include/boost-1_39/boost/range/size.hpp \
+  /usr/local/include/boost-1_39/boost/range/difference_type.hpp \
+  /usr/local/include/boost-1_39/boost/range/distance.hpp \
+  /usr/local/include/boost-1_39/boost/range/empty.hpp \
+  /usr/local/include/boost-1_39/boost/range/rbegin.hpp \
+  /usr/local/include/boost-1_39/boost/range/reverse_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/iterator/reverse_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/iterator/iterator_adaptor.hpp \
+  /usr/local/include/boost-1_39/boost/range/rend.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/find_format.hpp \
+  /usr/local/include/boost-1_39/boost/range/as_literal.hpp \
+  /usr/local/include/boost-1_39/boost/range/detail/str_types.hpp \
+  /usr/local/include/boost-1_39/boost/range/size_type.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/concept.hpp \
+  /usr/local/include/boost-1_39/boost/concept_check.hpp \
+  /usr/local/include/boost-1_39/boost/concept/assert.hpp \
+  /usr/local/include/boost-1_39/boost/concept/detail/general.hpp \
+  /usr/local/include/boost-1_39/boost/concept/detail/has_constraints.hpp \
+  /usr/local/include/boost-1_39/boost/concept/usage.hpp \
+  /usr/local/include/boost-1_39/boost/concept/detail/concept_def.hpp \
+  /usr/local/include/boost-1_39/boost/preprocessor/seq/for_each_i.hpp \
+  /usr/local/include/boost-1_39/boost/preprocessor/seq/enum.hpp \
+  /usr/local/include/boost-1_39/boost/concept/detail/concept_undef.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format_store.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/replace_storage.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/sequence_traits.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/yes_no_type.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/sequence.hpp \
+  /usr/local/include/boost-1_39/boost/mpl/logical.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format_all.hpp \
+  /usr/local/include/boost-1_39/boost/range/value_type.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/finder.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/constants.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/finder.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/compare.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/formatter.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/formatter.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/util.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/period.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_values_formatter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/period_formatter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/period_parser.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/string_parse_tree.hpp \
+  /usr/local/include/boost-1_39/boost/lexical_cast.hpp \
+  /usr/local/include/boost-1_39/boost/call_traits.hpp \
+  /usr/local/include/boost-1_39/boost/detail/call_traits.hpp \
+  /usr/local/include/boost-1_39/boost/detail/lcast_precision.hpp \
+  /usr/local/include/boost-1_39/boost/integer_traits.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/case_conv.hpp \
+  /usr/local/include/boost-1_39/boost/iterator/transform_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/detail/case_conv.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/string_convert.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_generator_formatter.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_generators.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_generator_parser.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_generators.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/format_date_parser.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/strings_from_facet.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_values_parser.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/special_values_parser.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/conversion.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/formatters.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_formatting.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/iso_format.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/parse_format_base.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/iso_format.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_format_simple.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/gregorian/parsers.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_parsing.hpp \
+  /usr/local/include/boost-1_39/boost/tokenizer.hpp \
+  /usr/local/include/boost-1_39/boost/token_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/iterator/detail/minimum_category.hpp \
+  /usr/local/include/boost-1_39/boost/token_functions.hpp \
+  /usr/local/include/boost-1_39/boost/lexical_cast.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/parse_format_base.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/iso_format.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_format_simple.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_types.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_clock.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/microsec_time_clock.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_clock.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/filetime_functions.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/time_period.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_iterator.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/dst_rules.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_defs.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_formatting_streams.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_formatting_locales.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_names_put.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_resolution_traits.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_parsing.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/date_parsing.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_io.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/time_facet.hpp \
+  /usr/local/include/boost-1_39/boost/algorithm/string/erase.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/ptime.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/time_period.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_duration.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/conversion.hpp \
+  /usr/local/include/boost-1_39/boost/date_time/posix_time/time_parsers.hpp
 
 /home/shureg/Projects/callback_log/include/callback_log/CallbackLog.class.h:
 
@@ -1334,3 +1517,369 @@ CallbackLog.class.o: CallbackLog.class.cc \
 /usr/local/include/boost-1_39/boost/bind/bind_mf2_cc.hpp:
 
 /usr/local/include/boost-1_39/boost/bind/placeholders.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/locale_config.hpp:
+
+/usr/local/include/boost-1_39/boost/cstdint.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/ptime.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_system.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_config.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_resolution_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/year_month_day.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/period.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_calendar.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_weekday.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/constrained_value.hpp:
+
+/usr/local/include/boost-1_39/boost/type_traits/is_base_of.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_day_of_year.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian_calendar.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian_calendar.ipp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_ymd.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/year_month_day.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_day.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_year.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_month.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/int_adapter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_duration_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_date.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_calendar.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/adjust_functors.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/wrapping_int.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_generators.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/compiler_config.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_clock_device.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/c_time.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/wrapping_int.hpp:
+
+/usr/local/include/boost-1_39/boost/config/no_tr1/cmath.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_system_split.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_system_counted.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/date_duration_operators.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/time_formatters.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/conversion.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/c_time.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/gregorian_io.hpp:
+
+/usr/local/include/boost-1_39/boost/io/ios_state.hpp:
+
+/usr/local/include/boost-1_39/boost/io_fwd.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_facet.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/replace.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/config.hpp:
+
+/usr/local/include/boost-1_39/boost/range/iterator_range.hpp:
+
+/usr/local/include/boost-1_39/boost/range/functions.hpp:
+
+/usr/local/include/boost-1_39/boost/range/begin.hpp:
+
+/usr/local/include/boost-1_39/boost/range/config.hpp:
+
+/usr/local/include/boost-1_39/boost/range/iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/range/mutable_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/range/const_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/range/end.hpp:
+
+/usr/local/include/boost-1_39/boost/range/detail/implementation_help.hpp:
+
+/usr/local/include/boost-1_39/boost/range/detail/common.hpp:
+
+/usr/local/include/boost-1_39/boost/range/detail/sfinae.hpp:
+
+/usr/local/include/boost-1_39/boost/range/size.hpp:
+
+/usr/local/include/boost-1_39/boost/range/difference_type.hpp:
+
+/usr/local/include/boost-1_39/boost/range/distance.hpp:
+
+/usr/local/include/boost-1_39/boost/range/empty.hpp:
+
+/usr/local/include/boost-1_39/boost/range/rbegin.hpp:
+
+/usr/local/include/boost-1_39/boost/range/reverse_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/iterator/reverse_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/iterator/iterator_adaptor.hpp:
+
+/usr/local/include/boost-1_39/boost/range/rend.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/find_format.hpp:
+
+/usr/local/include/boost-1_39/boost/range/as_literal.hpp:
+
+/usr/local/include/boost-1_39/boost/range/detail/str_types.hpp:
+
+/usr/local/include/boost-1_39/boost/range/size_type.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/concept.hpp:
+
+/usr/local/include/boost-1_39/boost/concept_check.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/assert.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/detail/general.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/detail/has_constraints.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/usage.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/detail/concept_def.hpp:
+
+/usr/local/include/boost-1_39/boost/preprocessor/seq/for_each_i.hpp:
+
+/usr/local/include/boost-1_39/boost/preprocessor/seq/enum.hpp:
+
+/usr/local/include/boost-1_39/boost/concept/detail/concept_undef.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format_store.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/replace_storage.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/sequence_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/yes_no_type.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/sequence.hpp:
+
+/usr/local/include/boost-1_39/boost/mpl/logical.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/find_format_all.hpp:
+
+/usr/local/include/boost-1_39/boost/range/value_type.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/finder.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/constants.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/finder.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/compare.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/formatter.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/formatter.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/util.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/period.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_values_formatter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/period_formatter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/period_parser.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/string_parse_tree.hpp:
+
+/usr/local/include/boost-1_39/boost/lexical_cast.hpp:
+
+/usr/local/include/boost-1_39/boost/call_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/detail/call_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/detail/lcast_precision.hpp:
+
+/usr/local/include/boost-1_39/boost/integer_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/case_conv.hpp:
+
+/usr/local/include/boost-1_39/boost/iterator/transform_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/detail/case_conv.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/string_convert.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_generator_formatter.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_generators.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_generator_parser.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_generators.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/format_date_parser.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/strings_from_facet.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_values_parser.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/special_values_parser.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/conversion.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/formatters.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_formatting.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/iso_format.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/parse_format_base.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/iso_format.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_format_simple.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/gregorian/parsers.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_parsing.hpp:
+
+/usr/local/include/boost-1_39/boost/tokenizer.hpp:
+
+/usr/local/include/boost-1_39/boost/token_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/iterator/detail/minimum_category.hpp:
+
+/usr/local/include/boost-1_39/boost/token_functions.hpp:
+
+/usr/local/include/boost-1_39/boost/lexical_cast.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/parse_format_base.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/iso_format.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_format_simple.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_types.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_clock.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/microsec_time_clock.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_clock.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/filetime_functions.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/time_period.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_iterator.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/dst_rules.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_defs.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_formatting_streams.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_formatting_locales.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_names_put.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_resolution_traits.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_parsing.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/date_parsing.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_io.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/time_facet.hpp:
+
+/usr/local/include/boost-1_39/boost/algorithm/string/erase.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/ptime.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/time_period.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/posix_time_duration.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/conversion.hpp:
+
+/usr/local/include/boost-1_39/boost/date_time/posix_time/time_parsers.hpp:

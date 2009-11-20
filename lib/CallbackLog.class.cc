@@ -17,13 +17,15 @@
 #include "callback_log/CallbackLog.class.h"
 #include "boost/bind.hpp"
 #include <string>
+#include "boost/date_time/posix_time/posix_time.hpp"
 
 using namespace CALLBACK_LOG;
 using namespace std;
 
 unsigned long CallbackLog::msg_ctr = 0;
 
-CallbackLog::CallbackLog(LOG_LVL _loglvl): loglvl(_loglvl)
+CallbackLog::CallbackLog(const string& _label, LOG_LVL _loglvl): 
+   label(_label), loglvl(_loglvl)
 {}
 
 void CallbackLog::bind()
@@ -54,11 +56,18 @@ void CallbackLog::process_message(LOG_LVL msglvl, boost::format msg)
    if(msglvl >= loglvl)
    {
       string new_msg_str = 
-	 (boost::format("%s [%d] : %s") 
+	 (boost::format("%s | <%s> - %s - [%d] : %s") 
+	  % timestamp() % label 
 	  % loglvl_str(msglvl) % ++(CallbackLog::msg_ctr) % msg.str()).str();
 
       write_message(new_msg_str);
 
       if(msglvl >= EXCEPTION) throw;
    }
+}
+
+const string CallbackLog::timestamp() const
+{
+   return boost::posix_time::to_simple_string( 
+	 boost::posix_time::microsec_clock::local_time() );
 }

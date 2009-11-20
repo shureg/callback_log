@@ -20,8 +20,9 @@
 using namespace CALLBACK_LOG;
 using namespace std;
 
-FileCallbackLog::FileCallbackLog(const string& _filename, LOG_LVL _loglvl):
-   CallbackLog(_loglvl), filename(_filename)
+FileCallbackLog::FileCallbackLog(const string& _filename, const string& _label,
+      LOG_LVL _loglvl):
+   CallbackLog(_label,_loglvl), filename(_filename)
 {
    bind();
 }
