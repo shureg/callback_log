@@ -62,7 +62,7 @@ void CallbackLog::process_message(LOG_LVL msglvl, boost::format msg)
 
       write_message(new_msg_str);
 
-      if(msglvl >= EXCEPTION) throw;
+      if(msglvl >= EXCEPTION) throw new_msg_str.c_str();
    }
 }
 
