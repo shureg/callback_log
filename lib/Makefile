@@ -17,8 +17,6 @@ endif
 
 LIB_INCLUDE_PATHS += $(PROJECT_INCLUDE_PATH)
 
-LIB_INCLUDE_FLAGS = $(foreach I,$(LIB_INCLUDE_PATHS),-I$I)
-
 ifeq "$(PROJECT_CONFIGURATION_TYPE)" "debug_strict"
    LIB_WARNINGS += error
 endif
@@ -43,7 +41,7 @@ $(DY_LIB_NAME): $(LIB_OBJECTS)
 $(ST_LIB_NAME): $(LIB_OBJECTS)
 	ar -rv $@ $^
 
-clean:
+clean: swigclean
 	@rm -rfv $(DY_LIB_NAME)
 	@rm -rfv $(ST_LIB_NAME)
 	@find -name "*$(LIB_OBJ_SUFFIX)" -type f -exec rm -rfv '{}' \;  
@@ -57,6 +55,10 @@ install: lib
 
 %$(LIB_OBJ_SUFFIX): %$(LIB_SRC_SUFFIX)
 
+include swig_wrap.mk 
+
+LIB_INCLUDE_FLAGS = $(call flags,$(LIB_INCLUDE_PATHS),I)
+
 %$(LIB_OBJ_SUFFIX): %$(LIB_SRC_SUFFIX)
 	$(call make_depend,$<,$@,$*$(LIB_SRC_DEP_SUFFIX),$(LIB_INCLUDE_FLAGS))
 	g++ -c -g -fPIC $(LIB_WARNING_FLAGS) $(LIB_INCLUDE_FLAGS) $(LIB_DEFINE_FLAGS) -o $@ $<
@@ -65,4 +67,9 @@ install: lib
 #usage $(call make_depend,src_file,obj_file,dep_file,flags)
 define make_depend
    g++ -MM -MF $3 -MP -MT $2 $4 $1
+endef
+
+#usage $(call flags,list,flag)
+define flags
+$(foreach f,$1,-$2$f)
 endef
