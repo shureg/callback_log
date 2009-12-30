@@ -6,3 +6,4 @@ test/*
 *.a
 *.swo
 *.d
+lib/*.py

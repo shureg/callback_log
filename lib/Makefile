@@ -3,7 +3,7 @@
 DY_LIB_NAME = lib$(LIB_NAME_STEM).so
 ST_LIB_NAME = lib$(LIB_NAME_STEM).a
 
-LIB_OBJECTS = $(patsubst %$(LIB_SRC_SUFFIX), %$(LIB_OBJ_SUFFIX), $(shell find . -name "*$(LIB_SRC_SUFFIX)" -type f))
+LIB_OBJECTS = $(patsubst %$(LIB_SRC_SUFFIX), %$(LIB_OBJ_SUFFIX), $(shell find . -name "*$(LIB_SRC_SUFFIX)" ! -name "*.swig_wrap$(LIB_SRC_SUFFIX)" -type f))
 
 LIB_DEP_FILES = $(patsubst %$(LIB_OBJ_SUFFIX), %$(LIB_SRC_DEP_SUFFIX), $(LIB_OBJECTS))
 
@@ -47,7 +47,7 @@ clean: swigclean
 	@find -name "*$(LIB_OBJ_SUFFIX)" -type f -exec rm -rfv '{}' \;  
 
 .PHONY: install
-install: lib
+install: lib swiginstall
 	install -Dv $(DY_LIB_NAME) $(INSTALL_PREFIX)/lib/$(DY_LIB_NAME)
 	install -Dv $(ST_LIB_NAME) $(INSTALL_PREFIX)/lib/$(ST_LIB_NAME)
 
