@@ -30,7 +30,8 @@ namespace CALLBACK_LOG
       INFO = 20,
       WARNING = 30,
       ERROR = 40,
-      EXCEPTION = 50
+      EXCEPTION = 50,
+      EXTERNAL_EXCEPTION = 60
    };
 
    extern boost::signal< void (LOG_LVL, boost::format) > LOG;

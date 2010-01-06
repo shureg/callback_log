@@ -47,6 +47,8 @@ const std::string CallbackLog::loglvl_str(LOG_LVL lvl)
       return "ERROR";
    else if (lvl == EXCEPTION)
       return "EXCEPTION";
+   else if (lvl == EXTERNAL_EXCEPTION)
+      return "EXTERNAL_EXCEPTION";
    else
       LOG(EXCEPTION,boost::format("Log level %d is not valid") % lvl);
 }
@@ -62,7 +64,7 @@ void CallbackLog::process_message(LOG_LVL msglvl, boost::format msg)
 
       write_message(new_msg_str);
 
-      if(msglvl >= EXCEPTION) throw new_msg_str.c_str();
+      if(msglvl == EXCEPTION) throw new_msg_str.c_str();
    }
 }
 
