@@ -16,5 +16,5 @@
 
 #include "callback_log/LOG.h"
 
-boost::signal< void (CALLBACK_LOG::LOG_LVL, boost::format) > 
+boost::signals2::signal< void (CALLBACK_LOG::LOG_LVL, boost::format) > 
    CALLBACK_LOG::LOG;

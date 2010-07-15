@@ -18,7 +18,7 @@
 #ifndef  _GLT_LOG_INC
 #define  _GLT_LOG_INC
 
-#include "boost/signals.hpp"
+#include "boost/signals2.hpp"
 #include "boost/format.hpp"
 
 namespace CALLBACK_LOG
@@ -34,7 +34,7 @@ namespace CALLBACK_LOG
       EXTERNAL_EXCEPTION = 60
    };
 
-   extern boost::signal< void (LOG_LVL, boost::format) > LOG;
+   extern boost::signals2::signal< void (LOG_LVL, boost::format) > LOG;
 }
 
 #endif   // ----- #ifndef _GLT_LOG_INC  -----
