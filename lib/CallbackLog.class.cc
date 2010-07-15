@@ -25,7 +25,7 @@ using namespace std;
 unsigned long CallbackLog::msg_ctr = 0;
 
 CallbackLog::CallbackLog(const string& _label, LOG_LVL _loglvl): 
-   label(_label), loglvl(_loglvl)
+   label(_label), loglvl(_loglvl), context("default")
 {}
 
 void CallbackLog::bind()
@@ -58,8 +58,8 @@ void CallbackLog::process_message(LOG_LVL msglvl, boost::format msg)
    if(msglvl >= loglvl)
    {
       string new_msg_str = 
-	 (boost::format("%s | <%s> - %s - [%d] : %s") 
-	  % timestamp() % label 
+	 (boost::format("%s | <%s: %s> - %s - [%d] : %s") 
+	  % timestamp() % label % context
 	  % loglvl_str(msglvl) % ++(CallbackLog::msg_ctr) % msg.str()).str();
 
       write_message(new_msg_str);
@@ -72,4 +72,9 @@ const string CallbackLog::timestamp() const
 {
    return boost::posix_time::to_simple_string( 
 	 boost::posix_time::microsec_clock::local_time() );
+}
+
+void CallbackLog::set_context(const std::string& context_)
+{
+   context = context_;
 }

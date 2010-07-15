@@ -31,6 +31,8 @@ namespace CALLBACK_LOG
 
       static unsigned long msg_ctr;
 
+      void set_context(const std::string& context_);
+
    protected:
 
       void bind();
@@ -46,6 +48,8 @@ namespace CALLBACK_LOG
       const std::string timestamp() const;
 
       LOG_LVL loglvl;
+
+      std::string context;
    };
 }
 #endif //_GLT_CALLBACKLOG_CLASS_INC
