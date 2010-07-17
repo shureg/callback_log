@@ -18,3 +18,12 @@
 
 boost::signals2::signal< void (CALLBACK_LOG::LOG_LVL, boost::format) > 
    CALLBACK_LOG::LOG;
+
+boost::thread_specific_ptr<
+   boost::signals2::signal< void (CALLBACK_LOG::LOG_LVL, boost::format) > > 
+   CALLBACK_LOG::mt_log_ptr;
+
+void CALLBACK_LOG::MT_LOG(CALLBACK_LOG::LOG_LVL lvl, boost::format msg)
+{
+   (*CALLBACK_LOG::mt_log_ptr)(lvl,msg);
+}

@@ -20,6 +20,7 @@
 
 #include "boost/signals2.hpp"
 #include "boost/format.hpp"
+#include "boost/thread.hpp"
 
 namespace CALLBACK_LOG
 {
@@ -35,6 +36,12 @@ namespace CALLBACK_LOG
    };
 
    extern boost::signals2::signal< void (LOG_LVL, boost::format) > LOG;
+
+   extern boost::thread_specific_ptr<
+      boost::signals2::signal< void (LOG_LVL, boost::format) > > mt_log_ptr;
+
+   void MT_LOG(LOG_LVL, boost::format);
 }
+
 
 #endif   // ----- #ifndef _GLT_LOG_INC  -----
