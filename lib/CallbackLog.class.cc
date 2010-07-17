@@ -24,13 +24,43 @@ using namespace std;
 
 unsigned long CallbackLog::msg_ctr = 0;
 
-CallbackLog::CallbackLog(const string& _label, LOG_LVL _loglvl): 
-   label(_label), loglvl(_loglvl), context("default")
-{}
-
-void CallbackLog::bind()
+CallbackLog::CallbackLog(const string& _label, LOG_LVL _loglvl,
+      const string& context, bool bind_immediately): 
+   label(_label), loglvl(_loglvl), context(context)
 {
-   LOG.connect( boost::bind(&CallbackLog::process_message,this,_1,_2) );
+   if(bind_immediately) bind(LOG);
+}
+
+void CallbackLog::bind(log_signal& log)
+{
+   log_connection = 
+      log.connect( boost::bind(&CallbackLog::process_message,this,_1,_2) );
+}
+
+void CallbackLog::unbind()
+{
+   log_connection.disconnect();
+}
+
+void CallbackLog::spawn_threaded_log()
+{
+   if( mt_log_ptr.get() == 0) mt_log_ptr.reset(new log_signal);
+
+   CallbackLog* new_log = spawn_from_this();
+   new_log->unbind();
+   new_log->bind(*mt_log_ptr);
+   thread_logs.push_back(new_log);
+}
+
+void CallbackLog::add_threaded_log(CallbackLog* cbl, bool unbind_first)
+{
+   if( mt_log_ptr.get() == 0) mt_log_ptr.reset(new log_signal);
+
+   if (unbind_first)
+      cbl->unbind();
+   
+   cbl->bind(*mt_log_ptr);
+   thread_logs.push_back(cbl);
 }
 
 const std::string CallbackLog::loglvl_str(LOG_LVL lvl)

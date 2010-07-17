@@ -21,10 +21,9 @@ using namespace CALLBACK_LOG;
 using namespace std;
 
 FileCallbackLog::FileCallbackLog(const string& _filename, const string& _label,
-      LOG_LVL _loglvl):
-   CallbackLog(_label,_loglvl), filename(_filename)
+      LOG_LVL _loglvl, const string& context, bool bind_immediately):
+   CallbackLog(_label,_loglvl,context,bind_immediately), filename(_filename)
 {
-   bind();
 }
 
 void FileCallbackLog::write_message(const string& msg)
@@ -34,4 +33,14 @@ void FileCallbackLog::write_message(const string& msg)
    ofs << msg;
 
    ofs.close();
+}
+
+CallbackLog* FileCallbackLog::spawn_from_this()
+{
+   string spf = ( boost::format("%s.%s") 
+	 % filename % (boost::this_thread::get_id()) ).str();
+
+   FileCallbackLog* tmp = new FileCallbackLog(spf,label,loglvl,context,false);
+
+   return (CallbackLog*) tmp;
 }

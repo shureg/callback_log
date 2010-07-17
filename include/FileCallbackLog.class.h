@@ -25,13 +25,16 @@ namespace CALLBACK_LOG
    {
    public:
 
-      FileCallbackLog(const std::string&, const std::string&, LOG_LVL);
+      FileCallbackLog(const std::string&, const std::string&, LOG_LVL,
+	    const std:: string& context="default", bool bind_immediately = true);
 
    protected:
 
       void write_message(const std::string&);
 
       std::string filename;
+
+      CallbackLog* spawn_from_this();
 
    private:
 

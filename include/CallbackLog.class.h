@@ -20,22 +20,34 @@
 #include "boost/format.hpp"
 #include <string>
 #include "callback_log/LOG.h"
+#include "boost/ptr_container/ptr_list.hpp"
 
 namespace CALLBACK_LOG
 {
+   typedef 
+      boost::signals2::signal< void (CALLBACK_LOG::LOG_LVL, boost::format) >
+      log_signal;
+
    class CallbackLog
    {
    public:
 
-      CallbackLog(const std::string&, LOG_LVL);
+      CallbackLog(const std::string&, LOG_LVL, const std::string& context,
+	    bool bind_immediately=true);
 
       static unsigned long msg_ctr;
 
       void set_context(const std::string& context_);
 
+      void spawn_threaded_log();
+
+      void add_threaded_log(CallbackLog* cbl, bool unbind_first = true);
+
    protected:
 
-      void bind();
+      void bind(log_signal&);
+
+      void unbind();
 
       void process_message(LOG_LVL, boost::format);
 
@@ -50,6 +62,12 @@ namespace CALLBACK_LOG
       LOG_LVL loglvl;
 
       std::string context;
+
+      virtual CallbackLog* spawn_from_this() = 0;
+
+      boost::signals2::connection log_connection;
+
+      boost::ptr_list< CallbackLog > thread_logs; 
    };
 }
 #endif //_GLT_CALLBACKLOG_CLASS_INC
