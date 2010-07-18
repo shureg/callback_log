@@ -6,7 +6,7 @@ LIB_OBJ_SUFFIX ?= .o
 
 LIB_SRC_DEP_SUFFIX ?= .d
 
-LIB_EXT_DEPS ?= boost_date_time
+LIB_EXT_DEPS ?= boost_date_time boost_thread
 
 #LIB_EXT_DEP_PATHS ?= /usr/local/lib
 

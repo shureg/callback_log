@@ -7,6 +7,8 @@
 %include "std_string.i"
 
 %ignore LOG;
+%ignore mt_log_ptr;
+%ignore MT_LOG;
 %include "LOG.h"
 
 %inline
