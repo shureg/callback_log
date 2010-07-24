@@ -28,8 +28,10 @@ CallbackLog::CallbackLog(const string& _label, LOG_LVL _loglvl,
       const string& context, bool bind_immediately): 
    label(_label), loglvl(_loglvl), context(context)
 {
-   if(bind_immediately) bind(LOG);
+   if(bind_immediately) bind(ST_LOG);
 }
+
+CallbackLog::~CallbackLog(){}
 
 void CallbackLog::bind(log_signal& log)
 {

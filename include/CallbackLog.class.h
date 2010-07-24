@@ -43,6 +43,8 @@ namespace CALLBACK_LOG
 
       void add_threaded_log(CallbackLog* cbl, bool unbind_first = true);
 
+      virtual ~CallbackLog();
+
    protected:
 
       void bind(log_signal&);

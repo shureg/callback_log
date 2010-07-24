@@ -9,6 +9,7 @@
 %ignore LOG;
 %ignore mt_log_ptr;
 %ignore MT_LOG;
+%ignore ST_LOG;
 %include "LOG.h"
 
 %inline

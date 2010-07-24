@@ -35,12 +35,21 @@ namespace CALLBACK_LOG
       EXTERNAL_EXCEPTION = 60
    };
 
-   extern boost::signals2::signal< void (LOG_LVL, boost::format) > LOG;
+   //! Single-threaded (thread-safe) log
+   extern boost::signals2::signal< void (LOG_LVL, boost::format) > ST_LOG;
 
    extern boost::thread_specific_ptr<
       boost::signals2::signal< void (LOG_LVL, boost::format) > > mt_log_ptr;
 
+   //! Multi-threaded log
    void MT_LOG(LOG_LVL, boost::format);
+
+   //! Automatic log
+   /*! Chooses MT_LOG when it is available, 
+    *  for the current thread, otherwise
+    *  chooses ST_LOG
+    */
+   void LOG(LOG_LVL, boost::format);
 }
 
 
