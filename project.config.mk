@@ -10,3 +10,5 @@ PROJECT_LIB_PATH := $(CURDIR)/lib
 BOOST_INCLUDE_PATH = /usr/local/include/boost-1_39
 
 export BOOST_INCLUDE_PATH
+
+SWIG_HEADER_NAME := $(PROJECT_NAME).python.swig_wrap.swg

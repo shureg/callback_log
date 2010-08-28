@@ -90,8 +90,8 @@ void CallbackLog::process_message(LOG_LVL msglvl, boost::format msg)
    if(msglvl >= loglvl)
    {
       string new_msg_str = 
-	 (boost::format("%s | <%s: %s> - %s - [%d] : %s") 
-	  % timestamp() % label % context
+	 (boost::format("%s | {%s} <%s: %s> - %s - [%d] : %s") 
+	  % timestamp() % ( boost::this_thread::get_id() ) % label % context
 	  % loglvl_str(msglvl) % ++(CallbackLog::msg_ctr) % msg.str()).str();
 
       write_message(new_msg_str);

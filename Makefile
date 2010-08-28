@@ -37,6 +37,7 @@ all: lib
 .PHONY: install
 install:
 	$(MAKE) --directory=$(PROJECT_LIB_PATH) install
+	install -Dv $(PROJECT_LIB_PATH)/$(SWIG_HEADER_NAME) $(INSTALL_PREFIX)/include/$(PROJECT_NAME)/$(SWIG_HEADER_NAME)
 	@for h in $(HEADER_STEMS); \
 	   do \
 	     install -Dv $(PROJECT_INCLUDE_PATH)/$$h $(INSTALL_PREFIX)/include/$(PROJECT_NAME)/$$h; \
